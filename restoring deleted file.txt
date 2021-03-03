@@ -1,0 +1,205 @@
+Microsoft Windows [Version 10.0.18363.1379]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+D:\Git Hub Repo\dev repo\sparkleMind>git branch --list
+* dev
+  main
+  staging
+
+D:\Git Hub Repo\dev repo\sparkleMind>git branch -d dev
+error: Cannot delete branch 'dev' checked out at 'D:/Git Hub Repo/dev repo/sparkleMind'
+
+D:\Git Hub Repo\dev repo\sparkleMind>git branch -d staging
+Deleted branch staging (was 8e77bf4).
+
+D:\Git Hub Repo\dev repo\sparkleMind>git commit -m "deleted branch staging"
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+nothing to commit, working tree clean
+
+D:\Git Hub Repo\dev repo\sparkleMind>git push origin
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': anubrata.ghosh.se@gmail.com
+Password for 'https://anubrata.ghosh.se@gmail.com@github.com':
+Everything up-to-date
+
+D:\Git Hub Repo\dev repo\sparkleMind>git branch --list
+* dev
+  main
+
+D:\Git Hub Repo\dev repo\sparkleMind>git switch staging
+Switched to a new branch 'staging'
+Branch 'staging' set up to track remote branch 'staging' from 'origin'.
+
+D:\Git Hub Repo\dev repo\sparkleMind>git branch --list
+  dev
+  main
+* staging
+
+D:\Git Hub Repo\dev repo\sparkleMind>git switch main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+D:\Git Hub Repo\dev repo\sparkleMind>git branch --list
+  dev
+* main
+  staging
+
+D:\Git Hub Repo\dev repo\sparkleMind>git branch -d dev
+warning: deleting branch 'dev' that has been merged to
+         'refs/remotes/origin/dev', but not yet merged to HEAD.
+Deleted branch dev (was 9e8a5fd).
+
+D:\Git Hub Repo\dev repo\sparkleMind>git push origin
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': anubrata.ghosh.se@gmail.com
+Password for 'https://anubrata.ghosh.se@gmail.com@github.com':
+To https://github.com/anubrataGhoshSe/sparkleMind.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/anubrataGhoshSe/sparkleMind.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\Git Hub Repo\dev repo\sparkleMind>git push origin
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': anubrata.ghosh.se@gmail.com
+Password for 'https://anubrata.ghosh.se@gmail.com@github.com':
+To https://github.com/anubrataGhoshSe/sparkleMind.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/anubrataGhoshSe/sparkleMind.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\Git Hub Repo\dev repo\sparkleMind>git branch --list
+* main
+  staging
+
+D:\Git Hub Repo\dev repo\sparkleMind>git push https://github.com/anubrataGhoshSe/sparkleMind.git
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': anubrata.ghosh.se@gmail.com
+Password for 'https://anubrata.ghosh.se@gmail.com@github.com':
+To https://github.com/anubrataGhoshSe/sparkleMind.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/anubrataGhoshSe/sparkleMind.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\Git Hub Repo\dev repo\sparkleMind>git pull
+Updating 8e77bf4..58b1154
+Fast-forward
+ file4.txt          | 0
+ git cmd learn.txt  | 2 ++
+ my git cmd_dev.txt | 1 -
+ 3 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 file4.txt
+
+D:\Git Hub Repo\dev repo\sparkleMind>git branch --list
+* main
+  staging
+
+D:\Git Hub Repo\dev repo\sparkleMind>git push https://github.com/anubrataGhoshSe/sparkleMind.git
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': anubrata.ghosh.se@gmail.com
+Password for 'https://anubrata.ghosh.se@gmail.com@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/anubrataGhoshSe/sparkleMind.git/'
+
+D:\Git Hub Repo\dev repo\sparkleMind>git push https://github.com/anubrataGhoshSe/sparkleMind.git
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': anubrata.ghosh.se@gmail.com
+Password for 'https://anubrata.ghosh.se@gmail.com@github.com':
+Everything up-to-date
+
+D:\Git Hub Repo\dev repo\sparkleMind>git branch --list
+* main
+  staging
+
+D:\Git Hub Repo\dev repo\sparkleMind>git pull
+Already up to date.
+
+D:\Git Hub Repo\dev repo\sparkleMind>git switch dev
+Switched to a new branch 'dev'
+Branch 'dev' set up to track remote branch 'dev' from 'origin'.
+
+D:\Git Hub Repo\dev repo\sparkleMind>git merge main
+CONFLICT (modify/delete): git cmd learn.txt deleted in HEAD and modified in main. Version main of git cmd learn.txt left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+
+D:\Git Hub Repo\dev repo\sparkleMind>git branch --list
+* dev
+  main
+  staging
+
+D:\Git Hub Repo\dev repo\sparkleMind>git commit -m "restore deleted file"
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       git cmd learn.txt
+
+D:\Git Hub Repo\dev repo\sparkleMind>git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   file4.txt
+        modified:   my git cmd_dev.txt
+
+Unmerged paths:
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+        deleted by us:   git cmd learn.txt
+
+
+D:\Git Hub Repo\dev repo\sparkleMind>git add .
+
+D:\Git Hub Repo\dev repo\sparkleMind>git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        new file:   file4.txt
+        new file:   git cmd learn.txt
+        modified:   my git cmd_dev.txt
+
+
+D:\Git Hub Repo\dev repo\sparkleMind>git commit -m "restoring deleting file"
+[dev c3e6860] restoring deleting file
+
+D:\Git Hub Repo\dev repo\sparkleMind>git push origin
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': anubrata.ghosh.se@gmail.com
+Password for 'https://anubrata.ghosh.se@gmail.com@github.com':
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 224 bytes | 224.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/anubrataGhoshSe/sparkleMind.git
+   9e8a5fd..c3e6860  dev -> dev
+
+D:\Git Hub Repo\dev repo\sparkleMind>git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+nothing to commit, working tree clean
+
+D:\Git Hub Repo\dev repo\sparkleMind>git branch --list
+* dev
+  main
+  staging
+
+D:\Git Hub Repo\dev repo\sparkleMind>
