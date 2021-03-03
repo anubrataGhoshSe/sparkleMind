@@ -1,0 +1,53 @@
+1. get all branch list:
+>D:\Git Hub Repo\sparkleMind>git branch --list
+* dev
+  main
+now you are in dev branch.
+
+2. switch dev to main branch
+>D:\Git Hub Repo\sparkleMind>git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+3. status of main branch
+>D:\Git Hub Repo\sparkleMind>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+4. merge dev branch into main branch
+>D:\Git Hub Repo\sparkleMind>git merge dev
+Updating 06639a7..66b904d
+Fast-forward
+ dev1/dev_1.txt | 0
+ file1.txt      | 0
+ file2.txt      | 0
+ file3.txt      | 0
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dev1/dev_1.txt
+ create mode 100644 file1.txt
+ create mode 100644 file2.txt
+ create mode 100644 file3.txt
+
+5. commit merged main branch into origin(main branch)
+D:\Git Hub Repo\sparkleMind>git commit -m "merge from dev branch"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+6. push into main branch
+>D:\Git Hub Repo\sparkleMind>git push origin
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': anubrata.ghosh.se@gmail.com
+Password for 'https://anubrata.ghosh.se@gmail.com@github.com':
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/anubrataGhoshSe/sparkleMind.git
+   06639a7..66b904d  main -> main
+
+7. know the status of the branch
+D:\Git Hub Repo\sparkleMind>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
