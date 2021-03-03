@@ -1,0 +1,38 @@
+
+D:\Git Hub Repo\sparkleMind>git branch --show-current
+main
+
+D:\Git Hub Repo\sparkleMind>git branch dev
+
+D:\Git Hub Repo\sparkleMind>git push -u origin dev
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': anubrata.ghosh.se@gmail.com
+Password for 'https://anubrata.ghosh.se@gmail.com@github.com':
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'dev' on GitHub by visiting:
+remote:      https://github.com/anubrataGhoshSe/sparkleMind/pull/new/dev
+remote:
+To https://github.com/anubrataGhoshSe/sparkleMind.git
+ * [new branch]      dev -> dev
+Branch 'dev' set up to track remote branch 'dev' from 'origin'.
+
+D:\Git Hub Repo\sparkleMind>git branch --list
+  dev
+* main
+
+D:\Git Hub Repo\sparkleMind>git switch dev
+Switched to branch 'dev'
+Your branch is up to date with 'origin/dev'.
+
+D:\Git Hub Repo\sparkleMind>git branch --show-current
+dev
+
+D:\Git Hub Repo\sparkleMind>git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+D:\Git Hub Repo\sparkleMind>git branch --show-current
+main
+
+D:\Git Hub Repo\sparkleMind>
