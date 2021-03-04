@@ -68,3 +68,61 @@ nothing to commit, working tree clean
 >git branch --list
 >git pull
 
+Example: to commit
+Microsoft Windows [Version 10.0.18363.1379]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+D:\Git Hub Repo\main repo\sparkleMind>git branch --list
+  branchABC
+* main
+
+D:\Git Hub Repo\main repo\sparkleMind>git pull
+Already up to date.
+
+D:\Git Hub Repo\main repo\sparkleMind>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    dev1/dev_1.txt
+        modified:   git cmd learn.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\Git Hub Repo\main repo\sparkleMind>git add .
+
+D:\Git Hub Repo\main repo\sparkleMind>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    dev1/dev_1.txt
+        modified:   git cmd learn.txt
+
+
+D:\Git Hub Repo\main repo\sparkleMind>git commit -m "update main branch"
+[main cd126b0] update main branch
+ 2 files changed, 16 insertions(+), 1 deletion(-)
+ delete mode 100644 dev1/dev_1.txt
+
+D:\Git Hub Repo\main repo\sparkleMind>git push origin
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': anubrata.ghosh.se@gmail.com
+Password for 'https://anubrata.ghosh.se@gmail.com@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 528 bytes | 528.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/anubrataGhoshSe/sparkleMind.git
+   b3d77b6..cd126b0  main -> main
+
+D:\Git Hub Repo\main repo\sparkleMind>git pull
+Already up to date.
+
+D:\Git Hub Repo\main repo\sparkleMind>
