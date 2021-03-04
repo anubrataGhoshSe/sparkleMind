@@ -52,4 +52,19 @@ Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 
-@nubrata
+8. branch delete
+>git branch -d <branch-name>
+>git push https://github.com/anubrataGhoshSe/sparkleMind.git
+>git pull
+
+9. branch create
+>git checkout -b <branch-name>
+>git push https://github.com/anubrataGhoshSe/sparkleMind.git
+>git branch --list
+>git pull
+
+10. switching between branches
+>git switch <target-branch>
+>git branch --list
+>git pull
+
